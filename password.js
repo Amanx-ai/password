@@ -13,19 +13,19 @@ function checkPassword(password) {
         }
     }
 
-    // ❌ Reject if length < 8
+   
     if (password.length < 8) {
         console.log("Password rejected: must be at least 8 characters.");
         return;
     }
 
-    // ❌ Reject if no number
+   
     if (!hasNumber) {
         console.log("Password rejected: must contain at least one number.");
         return;
     }
 
-    // ❌ Reject if no special character
+    
     if (!hasSpecial) {
         console.log("Password rejected: must contain at least one special character (!@#$%^&*).");
         return;
@@ -40,7 +40,7 @@ function checkPassword(password) {
 }
 
 // 🔹 Examples
-checkPassword("Hi12");         // rejected (too short)
-checkPassword("HelloWorld1");  // rejected (no special char)
-checkPassword("Hello123!");    // Medium
-checkPassword("VeryStrongPass123!"); // Strong
+checkPassword("Hi12");         
+checkPassword("HelloWorld1");  
+checkPassword("Hello123!");    
+checkPassword("VeryStrongPass123!");
